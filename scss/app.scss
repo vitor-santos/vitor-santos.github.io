@@ -1,8 +1,17 @@
 @import "settings";
-@import "foundation";
+@import "vars";
+// @import "foundation";
+
+
+@import
+   "foundation/components/button-groups",
+   "foundation/components/buttons",
+   "foundation/components/grid",
+   "foundation/components/type",
+   "foundation/components/top-bar";
 
 // Or selectively include components
-// @import
+//@import
 //   "foundation/components/accordion",
 //   "foundation/components/alert-boxes",
 //   "foundation/components/block-grid",
@@ -38,3 +47,219 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+
+body
+{
+	.top-bar {
+		height: 60px;
+		opacity: 0.7;
+	}
+
+	.hero {
+		width:100%;
+		height:100%;
+		background-image: url(../resources/images/hero.jpeg);
+		background-size: 100% 100%;
+	}
+
+	.header {
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		
+		.header-text {
+			text-align: right;
+			margin-right: 5%;
+			
+			* {
+				margin:0;
+				padding:0;
+			}
+
+			.big-text {
+				font-size: 4em;
+				background-color: rgba(255,255,255,0.4);
+				}
+
+			.small-text {
+				font-size: 1.1em;
+				background-color: rgba(255,255,255,0.4);
+			}
+		}
+	}
+}
+
+/*******************/
+/* wrapbody        */
+/*******************/
+#wrapbody
+{
+	padding:5em 8em 5em 8em;
+	font-size:13px;
+	font-weight:300;
+
+	h3
+	{
+		color:#282828;
+		font-size:18px;
+		font-weight:600;
+	}
+
+	#skills
+	{
+		padding-left:2em;
+
+		h3
+		{
+			font-size:15px;
+		}
+	}
+}
+
+#curriculum ul li
+{
+	list-style-type:none;
+	padding-top:2em;
+	padding-bottom:2em;
+	display:block;
+
+	img
+	{
+		width:6em;
+		vertical-align:middle;
+	}
+
+	span
+	{
+		padding-left:2em;
+	}
+}
+
+#hobbies
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:52em;
+	text-align:center;
+}
+
+#wrapbody #hobbies img
+{
+	width:8em;
+	padding:1em;
+	display:inline-block;
+	text-align:center;
+}
+
+#portfolio
+{
+	text-align:center;
+	width:100%
+
+	a
+	{
+		color:#16a085;
+		text-decoration:none;
+	}
+}
+
+.trabalho
+{
+	display:inline-block;
+	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.15), 0px 2px 3px 0px rgba(0,0,0,0.1);
+	padding:1px;
+	position:relative;
+
+	img
+	{
+		width:25em;
+		margin:0;
+		float:left;
+	}
+}
+
+.ttext
+{
+	padding:0.5em;
+	margin:0;
+	width:24.5em;
+	height:24.5em;
+	opacity:0;
+	background-color:white;
+	overflow:hidden;
+	text-overflow:clip;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	position:absolute;
+	left:-10000px;
+	
+}
+
+.wrapper:hover .ttext
+{
+	left:0;
+	opacity:0.95;
+}
+
+
+/*******************/
+/* Social          */
+/*******************/
+#wrapsocial
+{
+	background-color: #282828;
+	color:#f6f6d8;	
+}
+
+#wrapsocial ul
+{
+	text-align:center;	
+	margin:0;
+	padding:0;
+}
+
+#wrapsocial ul li
+{
+	display:inline;
+	text-decoration:none;
+}
+#wrapsocial h3
+{
+	text-align:left;
+	padding-left:5em;
+}
+
+#wrapsocial img
+{
+	background:inherit;
+	-webkit-transition: background-color .3s ease-in;
+	-moz-transition: background-color .3s ease-in;
+	-o-transition: background-color .3s ease-in;
+	transition: background-color .3s ease-in;
+	width:2em;
+}
+
+#wrapsocial img:hover
+{
+	background:white;
+}
+
+/*******************/
+/* Footer          */
+/*******************/
+footer
+{
+	text-align: center;
+	width: 100%;
+	z-index: 10000;
+	padding:3px 0 3px 0;
+
+	p
+	{
+		color:#282828;
+		font-size:13px;
+	}
+}

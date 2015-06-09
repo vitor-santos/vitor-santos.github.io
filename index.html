@@ -3,30 +3,39 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Vítor Santos Personal Page</title>
-	<link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="js/app.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700' rel='stylesheet' type='text/css'>	
-
 </head>
 <body>
-	
-    <nav id="nav">
-		<ul class="container">
-			<li><a href="#wraphead">Top</a></li>
-			<li><a href="#personal">Personal</a></li>
-			<li><a href="#curriculum">Curriculum</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-			<li><a href="#wrapsocial">Contact</a></li>
-		</ul>
-	</nav>
-    
-    <div id="wraphead">
-    	<img src="res/portrait.jpg" alt="You should be seeing my face"/>
-        <header>
-        	<h1>Vítor Santos</h1>
-            <h3>Engineer-to-be, Music Lover and Food Enthusiast</h3>        </header>
+
+    <nav class="top-bar" data-topbar role="navigation">
+        <section class="top-bar-section">
+        <!-- Right Nav Section -->
+            <ul class="right">
+              <li><a href="#personal">Personal</a></li>
+                <li><a href="#curriculum">Curriculum</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#wrapsocial">Contact</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <div class="hero">
+        <div class="header">
+            <div class="header-text">
+                <h1 class="big-text">Vítor Santos</h1>
+                <h5 class="small-text">Software engineer, music lover and food enthusiast</h5>
+            </div>
+        </div>
     </div>
+
+    <div class="row">
+
+
+    </div>
+
     <div id="wrapbody">
     	<h3>Personal</h3>
         <div id="personal" class="content">
@@ -118,18 +127,22 @@
         </div>
     </div>
 	
-    <div id="wrapsocial">
+    <div class="row" id="wrapsocial">
     	<h3>Contacts</h3>
 		<ul class="social">
 			<li class="linkedin"><a href="http://www.linkedin.com/profile/view?id=291929209&trk=nav_responsive_tab_profile" class="icon-linkedin"><img src="res/linked.png" alt="LinkedIn"/></a></li>
             <li class="googleplus"><a href="https://plus.google.com/100563716893184272785/posts" class="icon-gplus"><img src="res/gplus.png" alt="Google+"/></a></li>
 		</ul>				
 	</div>
-    <div id="wrapfooter">
+
+
+    <div class="row" id="wrapfooter">
         <footer>
             <p>Vítor Santos 2013</p>
         </footer>
     </div>
-    
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
 </body>
 </html>
